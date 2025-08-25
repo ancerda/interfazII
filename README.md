@@ -1,6 +1,7 @@
 interfazII
 
 ##### hola mundo
+
 ##### LED intermitente (Blink)
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)
@@ -19,6 +20,7 @@ void loop() {   // Se repite infinitamente
   delay(1500);             // Esperar 1 segundo
 }
 ```
+
 ##### control por pulsador
 ```js
 void setup() {
@@ -35,6 +37,7 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/ancerda/interfazII/refs/heads/main/img/led%20control%20pulsador.png"/>
+
 ##### potenciador
 ```js
 void setup() {
