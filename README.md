@@ -34,6 +34,7 @@ void loop() {
   }
 }
 ```
+<img src="https://raw.githubusercontent.com/ancerda/interfazII/refs/heads/main/img/led%20control%20pulsador.png"/>
 ##### potenciador
 ```js
 void setup() {
