@@ -96,4 +96,4 @@ void loop() {
   //delay(2000); // 2 segundos 
 }
 ```
-<img src="https://raw.githubusercontent.com/ancerda/interfazII/refs/heads/main/img/Captura%20de%20pantalla%202025-08-25%20102439.png/>
+<img src="https://raw.githubusercontent.com/ancerda/interfazII/refs/heads/main/img/Captura%20de%20pantalla%202025-08-25%20102439.png"/>
