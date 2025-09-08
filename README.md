@@ -101,3 +101,66 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/ancerda/interfazII/refs/heads/main/img/semaforocap.png"/>
+
+#### botón potenciometro
+
+#### random pulsador
+
+#### potenciometro processing
+
+```js
+
+import gab.opencv.*;
+import processing.video.*;
+import java.awt.*;
+
+Capture cam;
+OpenCV opencv;
+
+void setup() {
+  background(0);
+  size(640, 480);
+  
+  cam = new Capture(this, 640, 480);
+  cam.start();
+  
+  opencv = new OpenCV(this, 640, 480);
+  opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE); // Carga el detector de rostro
+}
+
+void draw() {
+  if (cam.available()) {
+    cam.read();
+  }
+  
+  image(cam, 0, 0);
+  
+  opencv.loadImage(cam);
+  
+  // Detecta rostros
+  Rectangle[] faces = opencv.detect();
+  
+  noFill();
+  stroke(0, 255, 0);
+  
+  for (int i = 0; i < faces.length; i++) {
+    Rectangle face = faces[i];
+    
+    // Dibuja rectángulo del rostro
+    rect(face.x, face.y, face.width, face.height);
+    
+    // Estimar posición de los ojos: arriba del rostro, a los lados
+    float eyeY = face.y + face.height * 0.35;
+    float eyeOffsetX = face.width * 0.2;
+    
+    float leftEyeX = face.x + eyeOffsetX;
+    float rightEyeX = face.x + face.width - eyeOffsetX;
+    
+    fill(255, 0, 0);
+    noStroke();
+    ellipse(leftEyeX, eyeY, 20, 20);
+    ellipse(rightEyeX, eyeY, 20, 20);
+  }
+}
+
+```
