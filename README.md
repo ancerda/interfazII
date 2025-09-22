@@ -112,7 +112,7 @@ void loop() {
 
 #### boton sonido
 
-```
+```js
 
 // Importamos librería para comunicación serial
 import processing.serial.*;
@@ -193,4 +193,5 @@ void playTrack(int index) {
   // Actualizamos la variable para saber cuál es la pista activa
   currentTrack = index;
 }
-```js
+
+```
