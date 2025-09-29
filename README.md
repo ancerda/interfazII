@@ -1,6 +1,6 @@
 interfazII
 
-##### hola mundo
+##### hola mundo n°1
 
 ```js
 void setup() {
@@ -12,7 +12,7 @@ void loop() {
 }
 ```
 
-##### LED intermitente (Blink)
+##### LED intermitente (Blink) n°2
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)
   pinMode(13, OUTPUT);  // Pin 13 como salida
@@ -31,7 +31,7 @@ void loop() {   // Se repite infinitamente
 }
 ```
 
-##### control por pulsador
+##### control por pulsador n°3
 ```js
 void setup() {
   pinMode(2, INPUT);  // Botón como entrada
@@ -48,7 +48,7 @@ void loop() {
 ```
 <img src="https://raw.githubusercontent.com/ancerda/interfazII/refs/heads/main/img/led%20control%20pulsador.png"/>
 
-##### potenciador
+##### potenciador n°4
 ```js
 void setup() {
   pinMode(2, INPUT);  // Botón como entrada
@@ -63,7 +63,7 @@ void loop() {
   }
 }
 ```
-#### semaforo
+#### semaforo n°5
 ```js
 // C++ code - Semáforo Autos y Peatones
 
@@ -112,15 +112,16 @@ void loop() {
 ```
 <img src="https://raw.githubusercontent.com/ancerda/interfazII/refs/heads/main/img/semaforocap.png"/>
 
-#### botón potenciometro
+#### botón potenciometro n°6
 
-#### random pulsador
+#### random pulsador n°7
 
-#### potenciometro processing
+#### potenciometro processing n°8
 
 ```js
 
-#### boton sonido
+´´´
+#### boton sonido n°9
 
 ```js
 
