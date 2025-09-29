@@ -118,9 +118,6 @@ void loop() {
 
 #### potenciometro processing n°8
 
-```js
-
-´´´
 #### boton sonido n°9
 
 ```js
