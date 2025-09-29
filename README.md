@@ -114,7 +114,7 @@ void loop() {
 
 #### botón potenciometro n°6
 
-´´´js
+```js
 
 int buttonPin = 2;       // Pin del botón
 int potPin = A0;         // Pin del potenciómetro
@@ -136,11 +136,11 @@ void loop() {
   }
 }
 
-´´´
+```
 
 #### random pulsador n°7
 
-´´´js
+```js
 
 import processing.serial.*;
 
@@ -184,8 +184,7 @@ void draw() {
 }
 
 
-´´´
-
+```
 #### potenciometro processing n°8
 
 #### boton sonido n°9
