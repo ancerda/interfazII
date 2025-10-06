@@ -335,7 +335,7 @@ void playTrack(int index) {
 }
 
 ```
-#### semáforo con sonido 
+#### semáforo con sonido (promt hecho por ia) 
 
 ```js
 
