@@ -402,3 +402,6 @@ void loop() {
 
 
 https://www.tinkercad.com/things/63tVGv1f0f2-semaforo/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard 
+
+
+<img src="Captura de pantalla 2025-10-06 094803.png"/>
