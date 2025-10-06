@@ -335,7 +335,7 @@ void playTrack(int index) {
 }
 
 ```
-#### semáforo con sonido (promt hecho por ia) 
+#### semáforo con sonido (promt hecho por ia) nota 1
 
 ```js
 
@@ -407,4 +407,7 @@ https://www.tinkercad.com/things/63tVGv1f0f2-semaforo/editel?returnTo=https%3A%2
 
 
 <img src="https://github.com/ancerda/interfazII/blob/main/img/Captura%20de%20pantalla%202025-10-06%20094803.png"/>
+
+<img src="https://github.com/ancerda/interfazII/blob/main/img/IMG_20251006_104907.jpg"/>
+
 
