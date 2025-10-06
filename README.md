@@ -335,3 +335,67 @@ void playTrack(int index) {
 }
 
 ```
+#### semáforo con sonido 
+
+```js
+
+// C++ code - Semáforo Autos y Peatones con Sonido
+
+// Definición de pines
+int LED_1 = 6;  // Luz roja autos
+int LED_2 = 7;  // Luz amarilla autos
+int LED_3 = 8;  // Luz verde autos
+int LED_4 = 9;  // Luz verde peatones
+int LED_5 = 10; // Luz roja peatones
+int buzzerPin = 11; // Pin para el buzzer
+
+void setup() {
+  // Configuramos todos los pines como salida
+  pinMode(LED_1, OUTPUT);
+  pinMode(LED_2, OUTPUT);
+  pinMode(LED_3, OUTPUT);
+  pinMode(LED_4, OUTPUT);
+  pinMode(LED_5, OUTPUT);
+  pinMode(buzzerPin, OUTPUT);
+}
+
+void loop() {
+  // 🚦 Fase 1: Autos en verde, peatones en rojo
+  digitalWrite(LED_1, LOW);   
+  digitalWrite(LED_2, LOW);   
+  digitalWrite(LED_3, HIGH);  
+  digitalWrite(LED_4, LOW);   
+  digitalWrite(LED_5, HIGH);  
+  noTone(buzzerPin); // Sin sonido
+  delay(5000);
+
+  // 🚦 Fase 2: Amarillo autos, peatones en rojo
+  digitalWrite(LED_3, LOW);   
+  digitalWrite(LED_2, HIGH);  
+  // Sonido de alerta amarillo
+  tone(buzzerPin, 800, 300);
+  delay(1000);
+  tone(buzzerPin, 800, 300);
+  delay(1000);
+  digitalWrite(LED_2, LOW);   
+
+  // 🚦 Fase 3: Rojo autos, verde peatones (con sonido)
+  digitalWrite(LED_1, HIGH);  
+  digitalWrite(LED_5, LOW);   
+  
+  // Verde peatones parpadeante con sonido
+  for(int i = 0; i < 3; i++) {
+    digitalWrite(LED_4, HIGH);  
+    tone(buzzerPin, 1000, 500); // Pitido largo
+    delay(1000);
+    
+    digitalWrite(LED_4, LOW);   
+    noTone(buzzerPin);
+    delay(500);
+  }
+  
+  noTone(buzzerPin);
+  delay(1000);
+}
+
+```
