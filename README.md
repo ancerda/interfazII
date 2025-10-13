@@ -413,7 +413,28 @@ https://www.tinkercad.com/things/63tVGv1f0f2-semaforo/editel?returnTo=https%3A%2
 
 
 
-#### Sensor sharp processing
+#### Sensor sharp 
+
+```js
+
+// Definir el pin del sensor Sharp
+int sharpPin = A0;
+
+void setup() {
+  Serial.begin(9600); // Iniciar comunicación serial
+}
+
+void loop() {
+  int sensorValue = analogRead(sharpPin); // Leer valor del sensor
+  Serial.println(sensorValue); // Enviar valor a Processing
+  delay(100); // Esperar un momento
+}
+
+```
+
+
+
+#### sensor sharp processing
 
 ```js
 
