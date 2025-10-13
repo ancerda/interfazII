@@ -411,3 +411,76 @@ https://www.tinkercad.com/things/63tVGv1f0f2-semaforo/editel?returnTo=https%3A%2
 <img src="https://github.com/ancerda/interfazII/blob/main/img/IMG_20251006_104907.jpg"/>
 
 
+
+
+#### Sensor sharp processing
+
+```js
+
+import processing.serial.*;
+
+Serial myPort;  // Create object from Serial class
+static String val;    // Data received from the serial port
+int sensorVal = 0;
+
+void setup()
+{
+  background(0); 
+  //fullScreen(P3D);
+   size(1080, 720);
+   noStroke();
+  noFill();
+  String portName = "COM5";// Change the number (in this case ) to match the corresponding port number connected to your Arduino. 
+
+  myPort = new Serial(this, Serial.list()[0], 9600);
+}
+
+void draw()
+{
+  if ( myPort.available() > 0) {  // If data is available,
+  val = myPort.readStringUntil('\n'); 
+  try {
+   sensorVal = Integer.valueOf(val.trim());
+  }
+  catch(Exception e) {
+  ;
+  }
+  println(sensorVal); // read it and store it in vals!
+  }  
+ //background(0);
+  // Scale the mouseX value from 0 to 640 to a range between 0 and 175
+  float c = map(sensorVal, 0, width, 0, 400);
+  // Scale the mouseX value from 0 to 640 to a range between 40 and 300
+  float d = map(sensorVal, 0, width, 40,800);
+  fill(255, c, 0);
+  ellipse(width/2, height/2, d, d);   
+
+}
+
+```
+
+#### detector de humedad
+
+/*******************************
+           Conexión:
+             VCC-5V
+             GND-GND
+             S-Analog pin A0
+
+Puedes ponder el sensor en la palma de tu mano
+para sensar la humedad de  tu palma.
+ ********************************/
+
+void setup()
+{
+  Serial.begin(9600);// abre el puerto serial y Establece la velocidad en baudios a 9600 bps
+}
+void loop()
+{
+  int sensorValue;
+  sensorValue = analogRead(0);   //conectar el sensor de humedad al pin analogo 0
+  Serial.println(sensorValue); //imprime el valor a serial.
+  delay(200);
+}
+
+```
