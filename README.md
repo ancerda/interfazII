@@ -413,7 +413,7 @@ https://www.tinkercad.com/things/63tVGv1f0f2-semaforo/editel?returnTo=https%3A%2
 
 
 
-#### Sensor sharp 
+#### Sensor sharp n°10
 
 ```js
 
@@ -486,7 +486,7 @@ void draw()
 
 
 
-#### detector de humedad
+#### detector de humedad n°11
 
 ```js
 
