@@ -4,6 +4,17 @@ interfazII
 
 1.[hola mundo](#hola-mundo-n1) <br>
 2.[LED intermitente](#led-intermitente-blink-n2) <br>
+3.[Control pulsador](##control-por-pulsador-n3) <br>
+4.[]() <br>
+5.[]() <br>
+6.[]() <br>
+6.[]() <br>
+7[]() <br>
+8.[]() <br>
+9.[]() <br>
+10.[]() <br>
+11.[]() <br>
+12..[]() <br>
 
 ##### hola mundo n°1
 
