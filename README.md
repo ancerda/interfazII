@@ -459,6 +459,12 @@ void draw()
 
 ```
 
+
+
+<img src="https://github.com/ancerda/interfazII/blob/main/img/Captura%20de%20pantalla%202025-10-13%20094618.png/>
+
+
+
 #### detector de humedad
 
 /*******************************
